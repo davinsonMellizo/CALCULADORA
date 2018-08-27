@@ -5,23 +5,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html">
     <h:head >
-        <title>Tiny calculator</title>
+        <title>CALCULADORA</title>
     </h:head>
     <h:body>
         <h1>Tiny calculator</h1>
         <h:form id="calculator">
-          <h:outputLabel for="param1" value="Param 1:"/>
+          <h:outputLabel for="param1" value="NÚMERO 1: "/>
           <h:inputText id="param1" value="#{calculatorBean.param1}"/>
           <br/>
-          <h:outputLabel for="param2" value="Param 2:"/>
+          <h:outputLabel for="param2" value="NÚMERO 2: "/>
           <h:inputText id="param2" value="#{calculatorBean.param2}"/>
           <br/>
-          <h:commandButton action="#{calculatorBean.add}" value="add"/>
-          <h:commandButton action="#{calculatorBean.substract}" value="substract"/>
-          <h:commandButton action="#{calculatorBean.multiply}" value="multiply"/>
-          <h:commandButton action="#{calculatorBean.divide}" value="divide"/>
+          <h:commandButton action="#{calculatorBean.add}" value="SUMA"/>
+          <h:commandButton action="#{calculatorBean.substract}" value="RESTA"/>
+          <h:commandButton action="#{calculatorBean.multiply}" value="MULTIPLICACIÓN"/>
+          <h:commandButton action="#{calculatorBean.divide}" value="DIVISIÓN"/>
           <br/>
-          <h:outputLabel for="result" value="Result:"/>
+          <h:outputLabel for="result" value="RESULTADO: "/>
           <h:outputText id="result" value="#{calculatorBean.result}"/>
         </h:form>
     </h:body>
