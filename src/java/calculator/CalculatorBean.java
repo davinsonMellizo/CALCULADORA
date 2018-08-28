@@ -47,6 +47,9 @@ public class CalculatorBean {
     public String getResult() {
         return _result;
     }
+    public void setResult(String lim) {
+        this._result=lim;
+    }
     // 
 
     public String add(){
@@ -59,13 +62,11 @@ public class CalculatorBean {
         return "";
     }
 
-    public String multiply(){
-        _result = Integer.toString(_param1 * _param2);
+    public String clean(){
+       this.setParam1(0);
+       this.setParam2(0);
         return "";
     }
 
-    public String divide(){
-        _result = _param2 == 0 ? "n/a" : Double.toString(_param1 / (double)_param2);
-        return "";
-    }
+    
 }

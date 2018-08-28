@@ -1,0 +1,15 @@
+body {
+    background-color: green;
+}
+.submit{
+width: 25%;
+background-color: green;
+color: green;
+padding: 14px 20px;
+margin: 8px 0;
+border-radius: 4px;
+cursor: pointer;
+border: 2px solid #d0d0d0;
+display: inline-block;
+transition: 0.3s
+}
